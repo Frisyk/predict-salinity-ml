@@ -200,10 +200,6 @@ Machine learning algorithms perform better and converge faster when trained on d
 
 ---
 
-Berikut adalah terjemahan dalam bahasa Inggris:  
-
----
-
 ## Modeling
 ### **1. K-Nearest Neighbors (KNN)**
 K-Nearest Neighbors (KNN) is a non-parametric algorithm used for regression and classification. This algorithm works by finding **K** nearest neighbors based on a specific distance metric (e.g., **Euclidean distance**).
