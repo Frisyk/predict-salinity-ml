@@ -281,7 +281,7 @@ di mana:
 - **\( R² = 0 \)** → Model tidak lebih baik dari rata-rata.  
 - **\( R² < 0 \)** → Model lebih buruk dari tebakan rata-rata.  
 
-###**Hasil evaluasi model**
+### **Hasil evaluasi model**
 
 #### Perbandingan Performa Model
 
