@@ -107,43 +107,53 @@ Pada proyek ini peneliti menggunakan dataset ["Underway pCO₂ and Ocean Data"](
 
 ### Univariate Analysis
 
-![Univariate Analysis](https://github.com/user-attachments/assets/64e9ed96-ccec-42cd-9d92-299853e54bad)
+![Univariate Analysis](https://github.com/user-attachments/assets/a9f3104d-1793-4428-b3e3-7d4bdfd750c8)
 
-#### **Dari grafik di atas dapat diketahui:**  
+### **Dari grafik di atas dapat diketahui:**  
 
-1. **waktu_julian** (**Rentang:** 0 – 365) : Distribusi menunjukkan beberapa puncak yang menandakan data dikumpulkan pada periode tertentu dalam satu tahun.  
+1. **Waktu Julian** (Range: 0 hingga sekitar 365) 
+   - Distribusi menunjukkan beberapa puncak, kemungkinan terkait dengan musim atau periode pengambilan data.
 
-2. **latitude** (**Rentang:** -75 hingga 75) : Data tersebar di belahan bumi utara dan selatan dengan beberapa titik pengukuran yang lebih padat.  
+2. **Latitude** (Range: Sekitar -75 hingga 75)  
+   - Distribusi menunjukkan beberapa kluster, menandakan data diambil dari berbagai lokasi.
 
-3. **longitude** (**Rentang:** -60 hingga 30) : Data terkonsentrasi pada beberapa wilayah geografis tertentu.  
+3. **Longitude** (Range: Sekitar -75 hingga 25)
+   - Distribusi bervariasi dengan beberapa puncak, menunjukkan wilayah dengan banyak pengambilan sampel.
 
-4. **kadar_CO₂_air** (**Rentang:** 200 – 450 ppm) : Distribusi mirip normal dengan sedikit kemiringan ke kanan.  
+4. **Kadar CO₂ air** (Range: Sekitar 200 hingga 500)
+   - Distribusi miring ke kanan dengan kepadatan tinggi antara 300–400.
 
-5. **tekanan_udara** (**Rentang:** 960 – 1025 hPa) : Distribusi mendekati normal dengan puncak sekitar 1000 hPa, menunjukkan tekanan udara standar.  
+5. **Tekanan Udara** (Range: Sekitar 960 hingga 1020)
+   - Distribusi menyerupai distribusi normal dengan puncak sekitar 1000.
 
-6. **suhu_air_sensor** (**Rentang:** 0 – 15°C) : Distribusi menunjukkan variasi suhu yang cukup luas, kemungkinan dipengaruhi oleh kedalaman atau lokasi pengukuran.  
+6. **Suhu Air Sensor** (Range: 0 hingga 15)
+   - Terdapat beberapa kluster data yang bisa menunjukkan kondisi lingkungan berbeda.
 
-7. **suhu_permukaan_laut** (**Rentang:** -2.5 – 12.5°C) : Distribusi multimodal, menandakan adanya perbedaan berdasarkan wilayah atau musim.  
+7. **Suhu Permukaan Laut** (Range: 0 hingga 15)
+   - Pola distribusi mirip dengan suhu air sensor.
 
-8. **salinitas** (**Rentang:** 33 – 34.5 PSU) : Mayoritas data terkonsentrasi di sekitar 34 PSU, yang sesuai dengan salinitas umum air laut.  
+8. **Salinitas** (Range: 28 hingga 34)
+   - Sebagian besar data berada di kisaran 32–34, menunjukkan karakteristik perairan tertentu.
 
-9. **tekanan_CO₂_air** (**Rentang:** 250 – 450) : Distribusi menunjukkan adanya beberapa kelompok data dengan puncak yang signifikan.  
+9. **Tekanan CO₂ Air** (Range: 150 hingga 450)
+   - Distribusi cenderung normal dengan puncak sekitar 300–400.
 
-10. **tekanan_CO₂_udara** (**Rentang:** 385 – 415) : Lonjakan pada satu titik menunjukkan kemungkinan anomali atau pola tertentu dalam data.  
+10. **Tekanan CO₂ Udara** (Range: 360 hingga 480)
+    - Memiliki distribusi yang sangat terpusat dengan puncak sekitar 400.
 
-11. **fraksi_CO₂_air** (**Rentang:** 200 – 450) : Distribusi cenderung multimodal, menandakan variasi yang dipengaruhi faktor lingkungan.  
+11. **Fraksi CO₂ Air**  (Range: 150 hingga 450)
+    - Pola distribusi mirip dengan tekanan CO₂ air.
 
-12. **fraksi_CO₂_udara** (**Rentang:** 385 – 410) : Pola distribusi serupa dengan tekanan CO₂ udara, menunjukkan adanya nilai dominan dalam rentang tertentu.  
+12. **Fraksi CO₂ Udara** (Range: 360 hingga 480)
+    - Memiliki distribusi sangat terpusat di sekitar 400.
 
-13. **kadar_CO₂_kering** (**Rentang:** 397.5 – 410) : Distribusi simetris dengan puncak yang cukup jelas.  
+13. **Kadar CO₂ Kering** (Range: 400 hingga 480)
+    - Distribusi mirip dengan tekanan CO₂ udara dan fraksi CO₂ udara.
 
-14. **tekanan_air** (**Rentang:** 960 – 1020) : Distribusi mirip dengan tekanan udara, dengan mayoritas data berkumpul di sekitar nilai tertentu.  
+14. **Tekanan Air** (Range: 960 hingga 1020)
+    - Pola distribusi mirip dengan tekanan udara.
 
-#### **Kesimpulan:**  
-- Beberapa fitur seperti **salinitas, tekanan udara, dan suhu air** memiliki distribusi mendekati normal.  
-- **Latitude dan longitude** menunjukkan distribusi yang lebih tersebar dengan beberapa kepadatan tinggi di area tertentu.  
-- **Tekanan dan fraksi CO₂ udara** memiliki satu lonjakan besar yang bisa mengindikasikan anomali atau efek dari faktor lingkungan tertentu.  
-- **Data suhu dan CO₂** menunjukkan variasi yang dipengaruhi oleh faktor eksternal seperti lokasi geografis dan musim.  
+Dari analisis ini, terlihat beberapa variabel memiliki distribusi normal, sementara yang lain menunjukkan kluster atau distribusi miring. Ini bisa menjadi indikasi bahwa beberapa faktor memiliki korelasi dengan lokasi atau musim.
 
 ### Multivariate Analysis
 
@@ -153,22 +163,31 @@ Pada proyek ini peneliti menggunakan dataset ["Underway pCO₂ and Ocean Data"](
 Grafik diatas menunjukkan keragaman korelasi antarfitur. Dengan nilai 1 yang menunjukkan korelasi tertinggi (sangat berkorelasi).
 Dapat disimpulkan fitur yang paling berkorelasi dengan salinitas adalah tekanan CO2 air, suhu air sensor, suhu permukaan laut, fraksi CO2 air dan kadar CO2 air
 
-![salinity_vs_else](https://github.com/user-attachments/assets/3c5bceed-1d7a-4c6c-9759-9a1237b6ab8f)
+![salinity_vs_everyone](https://github.com/user-attachments/assets/37fdd0e0-de54-4090-8cfd-8d186d3a9c10)
+
 
 fitur tekanan CO2 air, suhu air sensor, suhu permukaan laut, fraksi CO2 air dan kadar CO2 air korelasi yang positif terhadap salinitas. Korelasi positif artinya jika satu variabel meningkat, variabel lainnya (salinitas) juga meningkat.
 
 ---
 
 ## Data Preparation
-Sebelum dataset diolah, fitur yang tidak dipakai akan dihapus terlebih dahulu, agar model dapat memiliki performa yang bagus. Fitur yang digunakan pada model yang dibangun yaitu fitur salinitas, tekanan udara, suhu air sensor, suhu permukaan laut, tekanan air, dan kadar CO2 air
+Sebelum dataset diolah, fitur yang tidak dipakai akan dihapus terlebih dahulu, agar model dapat memiliki performa yang bagus. Fitur yang digunakan pada model yang dibangun yaitu fitur salinitas, tekanan CO2 air, suhu air sensor, suhu permukaan laut, fraksi CO2 air dan kadar CO2 air.
 
-![data frame](https://github.com/user-attachments/assets/7d28f561-b05c-4ef4-9a4c-7e8e34a9ed5b)
+| Index | Kadar CO₂ Air | Suhu Air Sensor | Suhu Permukaan Laut | Salinitas | Tekanan CO₂ Air | Fraksi CO₂ Air |
+|-------|-------------|----------------|--------------------|----------|--------------|--------------|
+| 0     | 380.41      | 9.81           | 8.75               | 33.74     | 354.00       | 352.64       |
+| 1     | 360.27      | 9.78           | 8.75               | 33.74     | 335.63       | 334.34       |
+| 2     | 352.18      | 9.75           | 8.75               | 33.74     | 328.46       | 327.19       |
+| 3     | 356.39      | 9.51           | 8.75               | 33.74     | 335.98       | 334.68       |
+| 4     | 355.02      | 9.31           | 8.75               | 33.74     | 337.47       | 336.17       |
+
 
 ### Checking Missing value and Outlier
 
-![image](https://github.com/user-attachments/assets/127aae85-3148-4458-9b8c-1b90fffc86dd)
+![missing_value](https://github.com/user-attachments/assets/32147ba1-8b33-404d-87ff-9d79889679ab)
 
-![image](https://github.com/user-attachments/assets/a118c7a4-14ec-4dc7-b45e-2474f689b022)
+![outliers](https://github.com/user-attachments/assets/67e591e1-2ec0-4b37-b211-7ca5398e8a97)
+
 
 Tidak terdapat missing value tetapi terdapat outlier pada dataset sehingga harus ditangani.
 
@@ -176,15 +195,15 @@ Tidak terdapat missing value tetapi terdapat outlier pada dataset sehingga harus
 untuk mengatasi outlier digunakan metode IQR. **Interquartile Range (IQR)** adalah ukuran statistik yang menunjukkan sebaran data di antara kuartil pertama (Q1) dan kuartil ketiga (Q3). IQR dihitung dengan rumus:
 IQR = Q3 - Q1
 
-![image](https://github.com/user-attachments/assets/c7d72334-19bf-47b1-8849-5d24e315f1c4)
+![removing_outliers](https://github.com/user-attachments/assets/5d7cc7e7-c37e-4fe9-9f4f-fce9bf648ca8)
 
-setelah ditangani jumlah dataset menjadi 19641 sampel.
+setelah ditangani jumlah dataset menjadi 19879 sampel.
 
 ### Dimensionality Reduction with PCA
-Fitur yang memiliki kemiripan direduksi menggunakan teknik PCA (Principal Component Analysis). Fitur yang direduksi adalah fitur tekanan udara dan tekanan air menjadi komponen tekanan; suhu air sensor dan suhu permukaan laut menjadi komponen suhu. PCA membantu menyederhanakan data tanpa kehilangan terlalu banyak informasi penting. Dengan mengurangi dimensi, mengatasi multikolinearitas, dan meningkatkan efisiensi komputasi.
+Fitur yang memiliki kemiripan direduksi menggunakan teknik PCA (Principal Component Analysis). Fitur yang direduksi adalah fitur Tekanan CO₂ Air dan Fraksi CO₂ Air menjadi komponen CO2; suhu air sensor dan suhu permukaan laut menjadi komponen suhu. PCA membantu menyederhanakan data tanpa kehilangan terlalu banyak informasi penting. Dengan mengurangi dimensi, mengatasi multikolinearitas, dan meningkatkan efisiensi komputasi.
 
 ### Train Test Split
-Train test split adalah proses membagi data menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Data biasanya dipisahkan dengan rasio 70:30, 80:20, 90:10. Pada proyek ini menggunakan rasio 90:10 sehingga diperoleh Jumlah data latih: 14918 dan Jumlah data uji: 1658.
+Train test split adalah proses membagi data menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Data biasanya dipisahkan dengan rasio 70:30, 80:20, 90:10. Pada proyek ini menggunakan rasio 90:10 sehingga diperoleh Jumlah data latih: 17891 dan Jumlah data uji: 1988.
 
 ### Standarization
 Algoritma machine learning memiliki performa lebih baik dan konvergen lebih cepat ketika dimodelkan pada data dengan skala relatif sama atau mendekati distribusi normal. Proses scaling dan standarisasi membantu untuk membuat fitur data menjadi bentuk yang lebih mudah diolah oleh algoritma. Proyek ini menggunakan teknik StandarScaler dari library Scikitlearn untuk standarisasi.
@@ -218,22 +237,20 @@ Pada GridSearchCV, parameter yang diuji untuk setiap model:
 - **KNN**: `n_neighbors` dan `weights`.  
 - **RF, GB, XGBoost**: `n_estimators`, `max_depth`, dan `learning_rate`.  
 
-| Model             | Best Score | Best Params                                               |
-|-------------------|-----------|-----------------------------------------------------------|
-| KNN              | 0.9481     | {'n_neighbors': 5, 'weights': 'distance'}                 |
-| Random Forest    | 0.9459     | {'max_depth': 32, 'n_estimators': 150, 'random_state': 42} |
-| Gradient Boosting| 0.922      | {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 150} |
-| XGBoost          | 0.9294     | {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 150} |
+| Index | Model             | Best Score | Best Params                                                 |
+|-------|-------------------|------------|-------------------------------------------------------------|
+| 0     | KNN               | 0.8811      | {'n_neighbors': 5, 'weights': 'distance'}                   |
+| 1     | Random Forest     | 0.8710      | {'max_depth': 32, 'n_estimators': 100, 'random_state': 42}  |
+| 2     | Gradient Boosting | 0.8455      | {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 150} |
+| 3     | XGBoost           | 0.8568      | {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 150} |
 
 
 Berdasarkan eksperimen menggunakan GridSearchCV :
 
-1. KNN memiliki skor tertinggi (0.9481) dengan n_neighbors = 5 dan weights = 'distance', menunjukkan bahwa model KNN dengan bobot berbasis jarak bekerja paling optimal.
-2. Random Forest memiliki skor 0.9459, dengan max_depth = 32 dan n_estimators = 150, yang menunjukkan kedalaman pohon dan jumlah estimator optimal.
-3. Gradient Boosting memiliki skor 0.922, dengan learning_rate = 0.1, max_depth = 7, dan n_estimators = 150, menunjukkan bahwa model ini bekerja cukup baik tetapi di bawah KNN dan Random Forest.
-4. XGBoost memiliki skor 0.9294, dengan learning_rate = 0.1, max_depth = 7, dan n_estimators = 150, yang mirip dengan Gradient Boosting tetapi sedikit lebih baik.
-
-KNN memberikan hasil terbaik, tetapi untuk dataset yang lebih besar atau kompleks, Random Forest atau XGBoost bisa lebih unggul karena lebih stabil terhadap overfitting dan lebih baik dalam menangani data noise.
+1. KNN memiliki skor tertinggi (0.8811) dengan **n_neighbors = 5** dan **weights = 'distance'**, menunjukkan bahwa model KNN dengan bobot berbasis jarak bekerja paling optimal dalam skenario ini.  
+2. Random Forest memiliki skor **0.871**, dengan **max_depth = 32**, **n_estimators = 100**, dan **random_state = 42**, yang menunjukkan bahwa model ini tetap kuat dengan kedalaman pohon yang cukup besar dan jumlah estimator yang optimal.  
+3. Gradient Boosting memiliki skor **0.8455**, dengan **learning_rate = 0.1**, **max_depth = 7**, dan **n_estimators = 150**, menunjukkan bahwa model ini bekerja cukup baik tetapi masih berada di bawah performa KNN dan Random Forest.  
+4. XGBoost memiliki skor **0.8568**, dengan **learning_rate = 0.1**, **max_depth = 7**, dan **n_estimators = 150**, yang mirip dengan Gradient Boosting tetapi menunjukkan sedikit peningkatan dalam performa.
 
 ---
 
@@ -266,61 +283,62 @@ di mana:
 
 ###**Hasil evaluasi model**
 
-#### Model Performance ###
+#### Perbandingan Performa Model
 
-|   | Model             | MSE                  | R²                  |
-|---|-------------------|----------------------|----------------------|
-| 0 | KNN              | 0.005886713277069045 | 0.9607243594776639  |
-| 1 | Random Forest    | 0.005436011627588042 | 0.9637314018007195  |
-| 2 | Gradient Boosting| 0.00811082659584525  | 0.9458852682772365  |
-| 3 | XGBoost          | 0.007920471757191051 | 0.9471552992542491  |
+| Index | Model             | MSE                   | R²                  |
+|-------|-------------------|-----------------------|----------------------|
+| 0     | KNN               | 0.0188                | 0.8836               |
+| 1     | Random Forest     | 0.0198                | 0.8773               |
+| 2     | Gradient Boosting | 0.0237                | 0.8534               |
+| 3     | XGBoost           | 0.0212                | 0.8692               |
 
-#### Mean Squared Error (MSE) Comparison ###
+#### Perbandingan Mean Squared Error (MSE)
 
-| Model             | Train MSE              | Test MSE              |
-|-------------------|-----------------------|-----------------------|
-| KNN              | 0.0                    | 0.005886713277069045  |
-| Random Forest    | 0.001059071556210185   | 0.005436011627588042  |
-| Gradient Boosting| 0.0052353108813665596  | 0.00811082659584525   |
-| XGBoost          | 0.005275568272595209   | 0.007920471757191051  |
+| Model              | Train MSE              | Test MSE               |
+|--------------------|-----------------------|------------------------|
+| KNN               | 0.0000                 | 0.0188                 |
+| Random Forest     | 0.0026                 | 0.0198                 |
+| Gradient Boosting | 0.0107                 | 0.0237                 |
+| XGBoost           | 0.0124                 | 0.0212                 |
+
+![image](https://github.com/user-attachments/assets/e2f3a044-32d6-4dd1-8d42-db2506015dd5)
 
 
 ### **Analisis Performa Model**  
 
-Berdasarkan evaluasi performa model menggunakan Mean Squared Error (MSE) dan R², berikut adalah temuan utama:  
+#### **Perbandingan Performa Model** 
 
-#### **Perbandingan Performa Model**  
-- **Random Forest** menunjukkan performa terbaik dengan **MSE sebesar 0.0054** dan **R² sebesar 0.9637**, menandakan bahwa model ini memiliki kesalahan prediksi yang paling kecil sekaligus kemampuan prediksi yang sangat baik.  
-- **KNN** juga memiliki performa tinggi dengan **MSE sebesar 0.0058** dan **R² sebesar 0.9607**, namun sedikit kalah dibandingkan Random Forest.  
-- **Gradient Boosting dan XGBoost** memiliki nilai MSE yang lebih tinggi (**0.0081 dan 0.0079**), yang menunjukkan sedikit peningkatan kesalahan dibandingkan Random Forest dan KNN. Nilai R² mereka (**0.9459 dan 0.9472**) juga lebih rendah, menandakan bahwa model ini tidak menjelaskan variabilitas data sebaik dua model sebelumnya.  
+- **KNN** menunjukkan performa terbaik dengan **MSE sebesar 0.0188** dan **R² sebesar 0.8836**, menandakan bahwa model ini memiliki kesalahan prediksi paling kecil serta kemampuan prediksi yang baik.
+- **Random Forest** memiliki **MSE sebesar 0.0198** dan **R² sebesar 0.8773**, yang sedikit lebih rendah dibandingkan KNN tetapi tetap menunjukkan performa yang solid.
+- **XGBoost** mencatat **MSE sebesar 0.0212** dan **R² sebesar 0.8692**, yang lebih baik dibandingkan Gradient Boosting tetapi masih di bawah KNN dan Random Forest.
+- **Gradient Boosting** memiliki **MSE sebesar 0.0237** dan **R² sebesar 0.8534**, menunjukkan kesalahan prediksi yang lebih tinggi dibandingkan model lainnya.
 
 #### **Analisis MSE pada Data Latih dan Uji**  
-- **KNN memiliki MSE sebesar 0.0 pada data latih**, yang menunjukkan bahwa model ini **sepenuhnya menghafal data latih**, namun tetap mampu menghasilkan generalisasi yang baik pada data uji.  
-- **Random Forest memiliki MSE latih yang kecil (0.0011) dibandingkan MSE uji (0.0054)**, menunjukkan bahwa model ini mampu belajar dari pola data tanpa terlalu overfitting.  
-- **Gradient Boosting dan XGBoost memiliki perbedaan kecil antara MSE latih dan uji**, tetapi MSE uji mereka tetap lebih tinggi dibandingkan Random Forest, menunjukkan bahwa meskipun model ini cukup baik dalam menangkap pola data, mereka tidak seoptimal Random Forest dalam generalisasi.
+
+- **KNN memiliki MSE sebesar 0.0 pada data latih**, yang menunjukkan bahwa model ini sepenuhnya menghafal data latih. Namun, model ini tetap mampu melakukan generalisasi yang baik pada data uji dengan MSE sebesar 0.0188.
+- **Random Forest memiliki perbedaan kecil antara MSE latih (0.0026) dan MSE uji (0.0198)**, menunjukkan bahwa model ini mampu belajar dari pola data dengan baik tanpa mengalami overfitting.
+- **Gradient Boosting dan XGBoost memiliki perbedaan kecil antara MSE latih dan uji**, tetapi MSE uji mereka tetap lebih tinggi dibandingkan KNN dan Random Forest. Ini menunjukkan bahwa meskipun model ini cukup baik dalam menangkap pola data, mereka tidak seoptimal KNN dan Random Forest dalam melakukan generalisasi.
+
 
 ### Hasil Prediksi keempat model
 
-| y_true  | prediksi_KNN | prediksi_Random Forest | prediksi_Gradient Boosting | prediksi_XGBoost |
-|---------|-------------|----------------------|--------------------------|------------------|
-| 16192   | 33.440000   | 33.4                 | 33.7                     | 33.8            | 33.700001 |
-| 8826    | 33.830000   | 33.8                 | 33.8                     | 33.9            | 33.900002 |
-| 717     | 33.290000   | 33.2                 | 33.3                     | 33.4            | 33.400002 |
-| 10846   | 33.890000   | 33.9                 | 33.9                     | 33.9            | 33.799999 |
-| 5260    | 34.541404   | 34.5                 | 34.5                     | 34.5            | 34.500000 |
+| y_true | prediksi_KNN | prediksi_Random Forest | prediksi_Gradient Boosting | prediksi_XGBoost |
+|--------|-------------|-----------------------|---------------------------|------------------|
+| 17068  | 33.46      | 33.5                  | 33.5                      | 33.5             | 33.500000        |
+| 19145  | 34.15      | 34.1                  | 34.1                      | 34.1             | 34.099998        |
+| 2816   | 33.94      | 33.8                  | 33.9                      | 34.1             | 34.099998        |
+| 738    | 33.60      | 33.5                  | 33.5                      | 33.7             | 33.599998        |
+| 9832   | 33.59      | 33.6                  | 33.6                      | 33.6  
 
-- Berdasarkan hasil prediksi, semua model menunjukkan performa yang baik dalam memprediksi tingkat salinitas air laut.
-- Model Random Forest dan XGBoost tampaknya memberikan hasil yang paling stabil dan akurat berdasarkan sampel ini.
-- Perbedaan kecil dalam prediksi menunjukkan bahwa semua model dapat digunakan untuk estimasi, tergantung pada kebutuhan spesifik dari analisis lebih lanjut.
+- **Untuk data pertama (y_true = 33.46)**, semua model memberikan prediksi yang sangat dekat dengan nilai aktual, dengan KNN memprediksi 33.5 dan model lainnya memberikan nilai yang sama, yaitu 33.5.  
+- **Pada data kedua (y_true = 34.15)**, semua model memberikan hasil yang hampir identik, dengan prediksi sebesar 34.1 untuk semua model.  
+- **Pada data ketiga (y_true = 33.94)**, KNN memberikan prediksi sedikit lebih rendah (33.8), sementara Random Forest menghasilkan 33.9, sedangkan Gradient Boosting dan XGBoost memberikan prediksi tertinggi, yaitu 34.1.  
+- **Pada data keempat (y_true = 33.60)**, KNN dan Random Forest memprediksi 33.5, sedangkan Gradient Boosting memberikan nilai sedikit lebih tinggi (33.7), dan XGBoost hampir sama dengan nilai aktual (33.6).  
+- **Pada data kelima (y_true = 33.59)**, semua model memberikan prediksi yang sangat akurat, dengan nilai yang hampir identik dengan y_true, yaitu 33.6.  
+
+Secara keseluruhan, semua model menunjukkan performa yang baik dengan prediksi yang sangat dekat dengan nilai aktual, terutama pada kasus-kasus di mana selisih antara y_true dan prediksi sangat kecil.
   
 ---
 
 ## Conclusion
-Penelitian ini berhasil menjawab problem statement yang diajukan. Faktor-faktor yang paling berpengaruh terhadap tingkat salinitas air laut telah diidentifikasi, yaitu **tekanan udara, suhu air sensor, suhu permukaan laut, dan tekanan air (korelasi positif)** serta **kadar CO₂ air (korelasi negatif)**. Selain itu, data telah melalui tahap preprocessing yang mencakup **normalisasi, pembersihan data, dan analisis multivariat**, sehingga model dapat belajar secara optimal. Dari hasil evaluasi, model terbaik untuk prediksi salinitas telah ditentukan berdasarkan performa masing-masing algoritma.  
-
-Penelitian ini juga berhasil mencapai tujuan yang telah ditetapkan. Model **Random Forest** memiliki **MSE terendah (0.0054) dan R² tertinggi (0.9637)**, sehingga menjadi model dengan performa terbaik. Model **KNN juga menunjukkan performa yang baik**, meskipun memiliki MSE yang sedikit lebih tinggi dibandingkan Random Forest. Sementara itu, **Gradient Boosting dan XGBoost masih kompetitif**, tetapi tingkat kesalahannya lebih tinggi dibandingkan dua model terbaik tersebut.  
-
-Dampak dari solusi yang dirancang juga terbukti efektif. **Eksplorasi dan preprocessing data** meningkatkan kualitas dataset sehingga model bekerja lebih optimal. **Pemilihan algoritma dan optimasi model** menunjukkan bahwa Random Forest adalah pilihan terbaik untuk prediksi salinitas. Selain itu, **evaluasi menggunakan MSE dan R²** berhasil mengukur tingkat kesalahan dan akurasi model, memastikan solusi yang diusulkan dapat digunakan untuk estimasi salinitas dengan tingkat kesalahan yang rendah.  
-
-Secara keseluruhan, penelitian ini berhasil **menjawab setiap problem statement, mencapai tujuan yang diharapkan, serta membuktikan bahwa solusi yang dirancang memberikan dampak yang signifikan**. Dengan demikian, **Random Forest dapat direkomendasikan sebagai model terbaik untuk prediksi tingkat salinitas air laut**.
-
+Penelitian ini berhasil mengidentifikasi faktor utama yang memengaruhi salinitas air laut, yaitu tekanan CO₂ air, suhu air sensor, suhu permukaan laut, fraksi CO₂ air, dan kadar CO₂ air, yang semuanya memiliki korelasi positif terhadap salinitas. Untuk meningkatkan kualitas data, dilakukan reduksi dimensi menggunakan PCA, standarisasi dengan **StandardScaler**, serta pembagian data dengan rasio **90:10**. Dari hasil eksperimen, **KNN** menunjukkan performa terbaik dengan **R² sebesar 0.8836** dan **MSE sebesar 0.0188**, diikuti oleh **Random Forest**, **XGBoost**, dan **Gradient Boosting**. Setiap solusi yang diterapkan terbukti berdampak positif, seperti **PCA yang mengurangi multikolinearitas**, **standarisasi yang meningkatkan stabilitas model**, serta **GridSearchCV yang memastikan model optimal**. Dengan demikian, penelitian ini telah berhasil mencapai semua tujuan yang ditetapkan dan memberikan solusi yang efektif dalam prediksi salinitas air laut.
